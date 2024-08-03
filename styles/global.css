@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Poppins;
+    src: url("./../assets/fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+  }
+  /* Regular Italic */
+  @font-face {
+    font-family: Poppins;
+    src: url("./../assets/fonts/Poppins-Italic.ttf");
+    font-style: italic;
+  }
+  /* Bold */
+  @font-face {
+    font-family: Poppins;
+    src: url("./../assets/fonts/Poppins-Bold.ttf");
+    font-weight: 700;
+  }
+  /* Bold Italic */
+  @font-face {
+    font-family: Poppins;
+    src: url("./../assets/fonts/Poppins-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+  }
+  /* Extrabold  */
+  @font-face {
+    font-family: Poppins;
+    src: url("./../assets/fonts/Poppins-ExtraBold.ttf");
+    font-weight: 800;
+  }
+  /* Extrabold Italic */
+  @font-face {
+    font-family: Poppins;
+    src: url("./../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+    font-weight: 800;
+    font-style: italic;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 32px;
+    max-width: 100vh;
+    /* font-style: italic; */
+  }
+  body, html{
+    min-width: 100%;
+  }

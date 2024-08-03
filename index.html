@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- display site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- CSS -->
+    <!-- Global Styles and Fonts -->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="age-calculator">
+        <form action="" id="form" name="form">
+          <div class="inputArea">
+            <div class="input">
+              <label for="day" id="dayLabel">Day</label>
+              <input
+                type="number"
+                placeholder="DD"
+                name="day"
+                id="dayInput"
+                min="1"
+              />
+              <span id="dayErrorMessage" class="error-message">Error</span>
+            </div>
+            <div class="input">
+              <label for="Month" id="monthLabel">Month</label>
+              <input
+                type="number"
+                placeholder="MM"
+                name="Month"
+                id="monthInput"
+                min="1"
+              />
+              <span id="monthErrorMessage" class="error-message">Error</span>
+            </div>
+            <div class="input">
+              <label for="year" id="yearLabel">Year</label>
+              <input
+                type="number"
+                placeholder="YYYY"
+                name="year"
+                id="yearInput"
+                min="1"
+              />
+              <span id="yearErrorMessage" class="error-message">Error</span>
+            </div>
+          </div>
+          <div class="submit-button">
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+              >
+                <g fill="none" stroke="#FFF" strokeWidth="2">
+                  <path
+                    d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <div class="results">
+          <div class="age day">
+            <span id="ageInYears">--</span>
+            <p>years</p>
+          </div>
+          <div class="age month">
+            <span id="ageInMonths">--</span>
+            <p>months</p>
+          </div>
+          <div class="age year">
+            <span id="ageInDays">--</span>
+            <p>days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
