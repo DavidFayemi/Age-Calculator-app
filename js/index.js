@@ -125,16 +125,18 @@ const calculateAge = () => {
     console.log(age);
     ageInYears = Math.floor(age / 31_449_600_000);
     ageInMonths = Math.floor(age / 2_419_200_000) % 12;
-    ageInDays = Math.floor(age / 86_400_000) % 30;
+    ageInDays = Math.floor(age / 86_400_000) % 31;
     console.log(
       `Age is ${ageInYears} years, ${ageInMonths} months, ${ageInDays} days`
     );
     // Formatting the output if empty
-    ageInDaysOutput.innerHTML = ageInDays || ageInDays< 0 ? ageInDays : "--";
-    ageInMonthsOutput.innerHTML = ageInMonths || ageInMonths < 0 ? ageInMonths : "--";
-    ageInYearsOutput.innerHTML = ageInYears || ageInYears < 0 ? ageInYears : "--";
-  } else{
-    validateForm()
+    ageInDaysOutput.innerHTML = ageInDays || ageInDays < 0 ? ageInDays : "--";
+    ageInMonthsOutput.innerHTML =
+      ageInMonths || ageInMonths < 0 ? ageInMonths : "--";
+    ageInYearsOutput.innerHTML =
+      ageInYears || ageInYears < 0 ? ageInYears : "--";
+  } else {
+    validateForm();
   }
 };
 
